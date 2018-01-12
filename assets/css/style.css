@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(images/concrete_seamless.png);
-
 }
 
 ul {
@@ -12,19 +11,21 @@ ul {
 }
 
 
-
-/*select all anchor tags*/
+/*select all anchor tags for nav bar*/
 
 a {
     color: grey;
     text-decoration: none;
 }
 
+
+/*Navigation*/
+
 nav.navigation {
     border-bottom: 2px solid;
     border-color: #cccccc;
     background-color: white;
-    padding: 0px 100px 30px 50px;
+    padding: 0px 250px 30px 50px;
 }
 
 nav.navigation li {
@@ -38,31 +39,33 @@ nav.navigation li {
 
 
 
+/*Logo*/
+
 .logo {
     position: absolute;
-    padding: 10px 20px;
+    padding: 11px 20px;
     background-color: #4aaaa5;
     color: #ffffff;
-    margin: 0px 0 10px 200px;
-
+    margin: 0px 0 15px 180px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
-.container {
-    background color: lightgrey;
-}
+
+/*Middle Left Section*/
 
 #about {
     overflow: auto;
     background-color: #ffffff;
     width: 560px;
-    height: 250px;
+    height: 350px;
     float: left;
-    padding: 30px 40px 50px 50px;
-    margin: 50px 20px 50px 150px;
-   font-family: 'Arial';
-
+    padding: 30px 40px 50px 49px;
+    margin: 50px 20px 50px 230px;
+    font-family: 'Arial';
+    line-height: 30px;
+    border: 1px solid;
+    border-color: lightgrey;
 }
-
 
 
 h2 {
@@ -72,35 +75,42 @@ h2 {
     font-family: 'Georgio';
 }
 
+
+/*Profile Image*/
+
 img {
-    height: 100px;
-    width: 100px;
+    height: 160px;
+    width: 180px;
     float: left;
     margin-right: 50px;
 }
 
-.connect {
-    overflow: auto;
-    background-color: #ffffff;
-    width: 190px;
-    height: 150px;
-    float: right;
-    padding: 30px 50px 50px 30px;
-    margin: 60px 250px 0 0;
-}
 
+/*Middle Right Section Icons*/
+
+.connect {
+    background-color: #ffffff;
+    height: 150px;
+    width: 190px;
+    float: right;
+    padding: 30px 50px 0px 29px;
+    margin: 55px 250px 0 0;
+    border: 1px solid;
+    border-color: lightgrey;
+    font-size: 14px;
+    text-align: center;
+}
 
 
 .icons {
     float: right;
-    right: 380px;
-    top: 250px;
-    position: absolute;
+    position: relative;
+    right: 70px;
 }
 
 .github img {
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
 }
 
 .linkedin img {
@@ -112,10 +122,10 @@ img {
 }
 
 .stackoverflow img {
-    height: 60px;
+    height: 50px;
     width: 55px;
     left: 120px;
-    bottom: 105px;
+    bottom: 100px;
     position: relative;
 }
 
@@ -125,8 +135,11 @@ img {
     display: table;
 }
 
+
+/*Footer*/
+
 #copyright {
-    background-color: darkgrey;
+    background-color: #696969;
     height: 100px;
     bottom: 0;
     width: 100%;
@@ -144,6 +157,8 @@ img {
 }
 
 
+
+
 /*Contact Page*/
 
 #contact {
@@ -152,9 +167,14 @@ img {
     width: 560px;
     height: 450px;
     float: left;
-    padding: 30px 40px 50px 50px;
-    margin: 50px 20px 50px 150px;
+    padding: 30px 40px 50px 49px;
+    margin: 50px 20px 50px 230px;
+    border: 1px solid;
+    border-color: lightgrey;
 }
+
+
+/*Form*/
 
 .contactForm input {
     width: 100%;
@@ -176,41 +196,68 @@ img {
     transition: all 0.3s ease-in-out;
 }
 
+
+
 /*Portfolio Page*/
+
 #portfolio {
     overflow: auto;
     background-color: #ffffff;
-    width: 440px;
-    height: 450px;
+    width: 560px;
+    height: 540px;
     float: left;
-    padding: 30px 40px 50px 50px;
-    margin: 50px 20px 50px 150px;
+    padding: 30px 40px 50px 49px;
+    margin: 50px 20px 50px 230px;
+    border: 1px solid;
+    border-color: lightgrey;
 }
 
- #portfolio img {
-	width: 35% ;
-	float: left;
-	margin: 10px 20px 20px 20px;
-
+#portfolio img {
+    height: 150px;
+    width: 230px;
+    float: left;
 }
+
+#portfolio p {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    z-index: 1;
+    position: absolute;
+}
+
+
+/*Portfolio Pictures*/
 
 .portfolio .hangman p {
-	padding: 10px 50px;
-	background-color: #4aaaa5;
-	z-index: 1;
-	position: absolute;
-	float: left;
-    left: 215px;
-    top:300px;
-
+    padding: 10px 84px;
+    float: left;
+    left: 280px;
+    top: 320px;
 }
 
 .portfolio .game p {
-    padding: 10px 40px;
-    background-color: #4aaaa5;
-    z-index: 1;
-    position: absolute;
-    left: 400px;
-    top: 300px;
-    
+    padding: 10px 79px;
+    left: 560px;
+    top: 320px;
+}
+
+.portfolio .trivia p {
+    padding: 10px 75px;
+    left: 280px;
+    top: 470px;
+}
+
+
+.portfolio .widget p {
+    padding: 10px 50px;
+    left: 560px;
+    top: 470px;
+}
+
+
+.portfolio .rock p {
+    padding: 10px 50px;
+    float: left;
+    left: 280px;
+    top: 620px;
 }
